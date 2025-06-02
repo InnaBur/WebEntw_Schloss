@@ -290,12 +290,8 @@ footer p {
 
   @media (max-width: 600px) {
     .translate-wrapper {
-      top: auto;
-      bottom: 0.3rem;
-      right: 0.5rem;
-      transform: scale(0.6); 
-      transform-origin: bottom right;
-    }
+        display: none;
+      }
   }
   
   .translate-button .goog-te-gadget {
