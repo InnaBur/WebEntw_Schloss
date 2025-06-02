@@ -198,6 +198,14 @@ text-align: center;
     max-width: calc(70% - 0.5rem);
   }
 
+  .egg-museum {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; /* обмеж ширину, якщо треба */
+    padding-left: 1.5rem; /* щоб не прилипало до краю */
+  }
+
 footer {
     background-color: #94d396;
     color: white;
