@@ -29,13 +29,12 @@ header {
     grid-template-areas:
         "logo title"
         "nav nav";
-    grid-template-rows: auto;
-    grid-template-columns: auto 1fr;
- 
+        grid-template-columns: auto 1fr;
     align-items: center;
     padding: 1rem;
     position: relative;
 }
+
 
 .logo {
     width: 100px;
@@ -272,4 +271,46 @@ footer p {
   
   form button:hover {
     background-color: #5fa55f;
+  }
+
+  .goog-te-gadget {
+    font-size: 0 !important;
+  }
+
+
+.translate-wrapper {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 1000;
+    font-size: 10px;
+    transform: scale(0.5); 
+    transform-origin: top right;
+  }
+  
+  .translate-button .goog-te-gadget {
+    font-size: 0 !important;
+  }
+  
+  .translate-button .goog-te-gadget-simple {
+    color: white !important;      
+    background: none !important;
+    border: none !important;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+   
+  }
+  
+  .translate-button select {
+    font-size: 10px;
+    padding: 2px 4px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+
+  .translate-button img {
+    display: none !important;
   }
