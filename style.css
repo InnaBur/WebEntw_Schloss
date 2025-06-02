@@ -11,10 +11,12 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+;
   }
   
   main {
     flex: 1;
+    margin-top: 1px;
   }
 
 
@@ -228,4 +230,46 @@ footer p {
   footer a {
     color: white;
     text-decoration: none;
+  }
+
+
+  form {
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color: #d4ead0;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  form p {
+    margin-bottom: 1rem;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form select,
+  form textarea,
+  form input[type="file"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  form button {
+    background-color: #76b876;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #5fa55f;
   }
