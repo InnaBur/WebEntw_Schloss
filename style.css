@@ -189,6 +189,8 @@ main {
     border-radius: 8px;
     object-fit: cover;
     display: block;
+    margin-left: auto; 
+    align-self: center;
   }
 
   .aside-klamm .klamm-text {
