@@ -1,0 +1,221 @@
+/* next three items make footer always 
+at the bottom of thr page*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0.5%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+
+
+  /* Header with GRID, logo lefts and h1 - rights */
+header {
+    background-color: #94d396;
+    border-radius: 10px;
+    color: white;
+    display: grid;
+    grid-template-areas:
+        "logo title"
+        "nav nav";
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
+ 
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.logo-text {
+    display: contents; 
+}
+
+.logo-text img {
+    grid-area: logo;
+}
+
+.logo-text h1 {
+    grid-area: title;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Navigation bar with dropdown menu (for Castles) */
+nav {
+    grid-area: nav;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 1rem;
+    font-size: 1.2rem; 
+    justify-content: center;  
+    flex-wrap: wrap;
+  }
+
+nav ul li {
+    position: relative;
+}
+
+nav ul .dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #76b876;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    min-width: 200px;
+  }
+
+  nav ul .dropdown-content li {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+  }
+  
+
+  nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul a:hover {
+    background-color: #5ea75e;
+    border-radius: 5px;
+  }
+
+
+/* Gallery styles */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 1rem;
+  }
+  
+  .gallery a {
+    display: block;
+    position: relative;    
+    aspect-ratio: 1 / 1;   
+    overflow: hidden;      
+    border-radius: 8px;   
+  }
+  
+  .gallery a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
+
+
+main {
+    background-color: #eeede2;
+    border-radius: 10px;
+    color: rgb(21, 74, 20);
+
+}
+
+  .content-middle .img-div,
+  .content-top .img-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .content-top .img-div img,
+  .content-middle .img-div img {
+    flex: 1 1 calc(40% - 0.5rem);
+    max-width: calc(40% - 0.5rem);
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+   
+  }
+
+  .aside-klamm {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #eef6f0;
+    border-left: 4px solid #76b876;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;         
+    align-items: flex-start; 
+    gap: 1rem;
+  }
+
+  .aside-klamm img {
+    flex: 0 0 calc(30% - 0.5rem);
+    max-width: calc(30% - 0.5rem);
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .aside-klamm .klamm-text {
+    flex: 1 1 calc(70% - 0.5rem);
+    max-width: calc(70% - 0.5rem);
+  }
+
+footer {
+    background-color: #94d396;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 2rem;
+  }
+
+footer p {
+    margin: 0;
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
