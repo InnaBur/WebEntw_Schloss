@@ -70,7 +70,7 @@ nav ul {
     margin: 0;
     display: inline-flex;
     gap: 1rem;
-    font-size: 0.9rem; 
+    font-size: 1.2rem; 
     justify-content: center;  
     flex-wrap: wrap;
   }
@@ -286,6 +286,16 @@ footer p {
     font-size: 10px;
     transform: scale(0.5); 
     transform-origin: top right;
+  }
+
+  @media (max-width: 600px) {
+    .translate-wrapper {
+      top: auto;
+      bottom: 0.3rem;
+      right: 0.5rem;
+      transform: scale(0.6); 
+      transform-origin: bottom right;
+    }
   }
   
   .translate-button .goog-te-gadget {
